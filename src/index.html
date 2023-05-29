@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Symbol Harvest Notify</title>
+    <?!= HtmlService.createHtmlOutputFromFile('style').getContent(); ?>
+    <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+    />
+  </head>
+  <body>
+    <div class="center">
+      <div
+        class="center container"
+        style="height: calc(100svh - 100px); min-height: 500px"
+      >
+        <h1 class="txt-align theme-gradient">Symbol Harvest Notify</h1>
+        <div class="flex full-width" style="margin-top: 20px">
+          <span
+            class="material-symbols-outlined"
+            style="font-size: 2rem; padding-left: 10px"
+          >
+            mail
+          </span>
+          <input
+            id="email"
+            class="flex-grow"
+            type="text"
+            placeholder="your email address"
+          />
+        </div>
+
+        <div class="flex full-width" style="margin-top: 20px">
+          <span
+            class="material-symbols-outlined"
+            style="font-size: 2rem; padding-left: 10px"
+          >
+            widgets
+          </span>
+          <input
+            id="symbol"
+            class="flex-grow"
+            type="text"
+            placeholder="your symbol address"
+          />
+        </div>
+        <button
+          id="subscribe"
+          class="btn shadow1 full-width"
+          style="margin-top: 20px"
+        >
+          Subscribe
+        </button>
+        <lottie-player
+          src="https://assets7.lottiefiles.com/packages/lf20_4kmUDEKo63.json"
+          background="transparent"
+          speed="1"
+          style="width: 300px; height: 300px"
+          loop
+          autoplay
+        ></lottie-player>
+      </div>
+    </div>
+    <div class="center">
+      <div class="footer full-width">
+        <div class="flex align-center">
+          <a
+            class="flex-grow bold"
+            style="font-size: 1.1rem"
+            target="_blank"
+            rel="noopener noreferrer"
+            href="https://symbol-community.com"
+          >
+            Symbol Community Web
+          </a>
+          <img
+            src="data:image/jpeg;base64,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"
+            alt="symbol logo"
+            style="height: 50px; width: 50px"
+          />
+        </div>
+      </div>
+    </div>
+    <div id="modal" class="modal center hidden">
+      <div class="container">
+        <div class="card full-width grey3 center">
+          <h3 class="txt-align">Processing is complete.</h3>
+          <button class="btn outlined" style="margin: 60px 0px 20px 0px">
+            Close
+          </button>
+        </div>
+      </div>
+    </div>
+  </body>
+
+  <script>
+    let state = "Subscribe";
+    let processed = false;
+    const modal = document.getElementById("modal");
+    const subscribe = document.getElementById("subscribe");
+    const emailInput = document.getElementById("email");
+    const symbolInput = document.getElementById("symbol");
+
+    modal.addEventListener("click", () => {
+      modal.classList.remove("visible");
+      modal.classList.remove("fade-in");
+      modal.classList.add("hidden");
+    });
+
+    subscribe.addEventListener("click", () => {
+      if (processed) return;
+      processed = true;
+      if (state === "Subscribe") {
+        google.script.run
+          .withSuccessHandler(() => {
+            modal.classList.remove("hidden");
+            modal.classList.add("visible");
+            modal.classList.add("fade-in");
+            state = "Unsbscribe";
+            subscribe.innerText = state;
+            processed = false;
+          })
+          .withFailureHandler(() => {
+            alert("Registration failed.");
+          })
+          .startSubscribe(symbolInput.value);
+      } else {
+        google.script.run
+          .withSuccessHandler(() => {
+            modal.classList.remove("hidden");
+            modal.classList.add("visible");
+            modal.classList.add("fade-in");
+            state = "Subscribe";
+            subscribe.innerText = state;
+            processed = false;
+          })
+          .withFailureHandler(() => {
+            alert("Unregistration failed.");
+          })
+          .stop();
+      }
+    });
+
+    google.script.run
+      .withSuccessHandler((value) => {
+        state = value ? "Unsbscribe" : "Subscribe";
+        subscribe.innerText = state;
+      })
+      .withFailureHandler(() => {
+        alert("Startup failed. Please reboot.");
+      })
+      .isRegistred();
+
+    google.script.run
+      .withSuccessHandler((value) => {
+        emailInput.value = value;
+      })
+      .withFailureHandler(() => {
+        alert("Startup failed. Please reboot.");
+      })
+      .getCurrentUserEmail();
+  </script>
+</html>
