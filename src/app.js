@@ -7,21 +7,7 @@ function doGet() {
     .setFaviconUrl(favicon)
     .addMetaTag("apple-mobile-web-app-capable", "yes")
     .addMetaTag("mobile-web-app-capable", "yes")
-    .addMetaTag("viewport", "width=device-width, initial-scale=1")
-    .addMetaTag("twitter:card", "summary_large_image")
-    .addMetaTag("twitter:site", "@faunsu19000")
-    .addMetaTag(
-      "description",
-      "Symbol のハーベスト通知を Gmail で受け取る事ができます"
-    )
-    .addMetaTag(
-      "twitter:description",
-      "Symbol のハーベスト通知を Gmail で受け取る事ができます"
-    )
-    .addMetaTag(
-      "twitter:image",
-      "https://github.com/ymuichiro/symbol_japan_forum/blob/main/logo/cc_0/twitter-card.png?raw=true"
-    );
+    .addMetaTag("viewport", "width=device-width, initial-scale=1");
 }
 
 function startSubscribe(address) {
@@ -128,7 +114,7 @@ function writeDatabase(data) {
             </table>
             <div
               style="margin-top: 40px;background-color: rgb(234, 234, 234);padding: 10px 10px 10px 10px;">
-              <p style="font-size: 0.9em">For more information about us, please visit the <a href="https://symbol-community">Symbol Community Web</a>.<br /> If you wish to unsubscribe from this e-mail, please do so at <a href="https://symbol-community">unsubscribe</a>.</p>
+              <p style="font-size: 0.9em">For more information about us, please visit the <a href="https://symbol-community.com/">Symbol Community Web</a>.<br /> If you wish to unsubscribe from this e-mail, please do so at <a href="https://script.google.com/macros/s/AKfycbwCL-af49lTUBjshbn9JSDKYD-CndvkKQHJ9KUBEx4KND5z3FnCxm6391ilwttW9HED/exec">unsubscribe</a>.</p>
             </div>
           `,
         }
